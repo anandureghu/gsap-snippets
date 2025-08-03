@@ -54,7 +54,7 @@ const HorizontalScroll = () => {
           {new Array(10).fill(null).map((_, index) => (
             <div
               key={index}
-              className="min-w-64 min-h-64 bg-blue-500 m-4 flex items-center justify-center text-white text-7xl"
+              className="min-w-64 min-h-64 bg-blue-500/2 border border-dashed border-blue-300/10 m-4 flex items-center justify-center text-white text-7xl"
             >
               {index + 1}
             </div>
