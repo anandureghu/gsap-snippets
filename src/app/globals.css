@@ -1,6 +1,11 @@
 @import "tailwindcss";
+@import "../styles/syntax-highlight.css";
 
 /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --step--2: clamp(0.6944rem, 0.6577rem + 0.1836vw, 0.8rem);
@@ -64,7 +69,7 @@
   }
 
   .app-container {
-    @apply max-w-[650px] max-md:max-w-[560px] max-sm:max-w-[350px];
+    @apply max-w-[1220px] max-md:max-w-[950px] max-sm:max-w-[375px];
   }
 
   .glass {
@@ -103,5 +108,9 @@
   /* Hide scrollbar for IE and Edge */
   .no-scrollbar {
     -ms-overflow-style: none;
+  }
+
+  .bg-gd-highlight {
+    @apply inline-block bg-gradient-to-r from-indigo-600 to-pink-500;
   }
 }

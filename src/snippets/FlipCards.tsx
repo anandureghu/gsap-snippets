@@ -25,11 +25,11 @@ const FlipCards = () => {
             markers: false,
           },
         })
-        // card-1 goes back, card-2 comes in front, card-3 comes to center
+        // card-3 goes back, card-2 comes in front, card-1 comes to center
         .to("#card-3", { zIndex: 1, rotation: 0 })
         .to("#card-1", { zIndex: 2, rotation: -6.5 }, "<")
         .to("#card-2", { zIndex: 3, rotation: -13 }, "<")
-        // card-2 goes back, card-3 comes in front, card-1 comes in center
+        // card-2 goes back, card-1 comes in front, card-3 comes in center
         .to("#card-2", { zIndex: 1, rotation: 0 })
         .to("#card-1", { zIndex: 3, rotation: -13 }, "<")
         .to("#card-3", { zIndex: 2, rotation: -6.5 }, "<");
