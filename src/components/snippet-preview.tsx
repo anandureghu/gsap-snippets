@@ -1,10 +1,14 @@
 import { ISnippet } from "@/lib/types/snippet.type";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const SnippetPreview = ({ snippet }: { snippet: ISnippet }) => {
   return (
-    <div className="mb-10 max-w-1/2 w-[calc(50%-20px)] relative">
+    <Link
+      className="mb-10 max-w-1/2 w-[calc(50%-20px)] relative"
+      href={`/snippets/${snippet.fileName}`}
+    >
       <div className="relative h-[400px] border border-gray-900 rounded-lg mb-4 overflow-hidden">
         <Image
           src={snippet.preview}
@@ -15,7 +19,7 @@ const SnippetPreview = ({ snippet }: { snippet: ISnippet }) => {
       </div>
       <h2 className="text-2xl font-medium mb-2">{snippet.title}</h2>
       <p className="mb-4">{snippet.description}</p>
-    </div>
+    </Link>
   );
 };
 

@@ -44,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-gray-950 text-slate-200">
       <body
-        className={`relative ${fredoka.variable} ${handlee.variable} ${fustat.variable} ${missFajardose.variable} antialiased font-body app-container mx-auto pt-[70px]`}
+        className={`relative ${fredoka.variable} ${handlee.variable} ${fustat.variable} ${missFajardose.variable} antialiased font-body app-container mx-auto`}
       >
         <Navbar />
         {children}
