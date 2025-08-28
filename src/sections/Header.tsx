@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import GlimpseIcon from "@/icons/glimpse.svg";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -51,6 +52,12 @@ const Header = () => {
         />
         more updates are coming
       </p>
+      <Link
+        href="/snippets"
+        className="bg-gd-highlight px-5 py-2 rounded-3xl cursor-pointer"
+      >
+        checkout now
+      </Link>
     </div>
   );
 };
