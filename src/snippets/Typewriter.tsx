@@ -17,21 +17,6 @@ const Typewriter = () => {
         type: "lines, words, chars",
       });
 
-      // const lines = splitText.words;
-      // gsap.from(lines, {
-      //   yPercent: 380,
-      //   stagger: 0.02,
-      //   ease: "back.out",
-      //   duration: 1,
-      //   scrollTrigger: {
-      //     trigger: "#text",
-      //     start: "top 80%",
-      //     end: "top 50%",
-      //     scrub: true,
-      //     // markers: true,
-      //   },
-      // });
-
       const lines = splitText.chars;
       gsap.from(lines, {
         opacity: 0,
@@ -40,10 +25,6 @@ const Typewriter = () => {
         duration: 1,
         scrollTrigger: {
           trigger: "#text",
-          // start: "top 80%",
-          // end: "top 50%",
-          // scrub: true,
-          // markers: true,
         },
       });
     },

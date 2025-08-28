@@ -3,4 +3,6 @@ export interface ISnippet {
   description: string;
   code: string;
   preview: string;
+  fileName: string;
+  component: React.FC;
 }

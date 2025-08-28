@@ -1,6 +1,11 @@
 @import "tailwindcss";
+@import "../styles/syntax-highlight.css";
 
 /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --step--2: clamp(0.6944rem, 0.6577rem + 0.1836vw, 0.8rem);
