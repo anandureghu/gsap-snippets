@@ -14,7 +14,7 @@ const Header = () => {
         <b className="uppercase font-semibold text-green-400">GSAP</b> snippets
         collected while learning 😬
       </h3>
-      <p className="text-sm text-white/60 flex items-center gap-1">
+      <p className="text-sm text-white/60 flex items-center gap-1 flex-wrap justify-center">
         you can find the source code from{" "}
         <a
           href="https://github.com/anandureghu/gsap-snippets/tree/main/src/sections"

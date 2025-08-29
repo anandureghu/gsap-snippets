@@ -6,7 +6,7 @@ import React from "react";
 const SnippetPreview = ({ snippet }: { snippet: ISnippet }) => {
   return (
     <Link
-      className="mb-10 max-w-1/2 w-[calc(50%-20px)] relative"
+      className="mb-10 max-w-1/2 max-md:max-w-full w-[calc(50%-20px)] max-md:w-full relative"
       href={`/snippets/${snippet.fileName}`}
     >
       <div className="relative h-[400px] border border-gray-900 rounded-lg mb-4 overflow-hidden">
