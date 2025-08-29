@@ -43,6 +43,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-gray-950 text-slate-200">
+      <head>
+        <meta name="apple-mobile-web-app-title" content="GsapSnippets" />
+      </head>
       <body
         className={`relative ${fredoka.variable} ${handlee.variable} ${fustat.variable} ${missFajardose.variable} antialiased font-body app-container mx-auto`}
       >

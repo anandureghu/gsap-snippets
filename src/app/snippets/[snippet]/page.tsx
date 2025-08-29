@@ -17,7 +17,6 @@ export default async function SnippetDetail({
   params: Promise<{ snippet: string }>;
 }) {
   const { snippet } = await params;
-  console.log(process.cwd());
   const filePath = path.join(process.cwd(), "snippets", `${snippet}.tsx`);
   const file = await fs.readFile(filePath, "utf8");
 
